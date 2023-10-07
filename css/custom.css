@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+html{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  }
+
+body {
+  font-family: 'AR One Sans', sans-serif;
+  font-family: 'Mooli', sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  font-size: 20px;
+  justify-content: center !important;
+  align-items: center !important;
+  
+}
+.body-container{
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+  background-color: #2cb433;
+  
+}
+.title-card{
+  background-color: #2cb433;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: inherit;
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  height: 13rem;
+  padding-top: 100px;
+  margin: auto;
+}
+.card-body{
+  margin: 10px;
+  align-items: center;
+  padding: 10px;
+}
+.card-title {
+  font-family: inherit;
+  font-size: 50px;
+  text-align: center;
+  
+}
+
+  .searchbar{
+  margin:20px;
+  height: 80px;
+  background-color: #ffffff;
+  border-radius: 60px ;
+  padding: 20px ;
+  }
+
+  .search_input{
+  color: rgb(0, 0, 0);
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color:transparent;
+  transition: width 0.4s linear ;
+  }
+
+  .searchbar:hover > .search_input{
+  padding: 10px 10px;
+  width: 650px ;
+  caret-color:rgb(0, 0, 0);
+  transition: width 0.4s linear;
+  }
+
+  .searchbar:hover > .search_icon{
+  background: rgb(25, 175, 38);
+  color: #000000;
+  }
+
+  .search_icon{
+  height: 40px;
+  width: 40px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:rgb(0, 0, 0);
+  text-decoration:none;
+  }
+
+  .result-card {
+    width: 30rem;
+    height: 30rem;
+    margin: 20px;
+    padding-bottom:100px;
+    background-color: #2cb433;
+    border: none;
+    border-radius: 2  s0px 20px 30px 30px;
+    align-items: center;
+    font-size: 40px;
+    color: #ffffff ;
+    font-style: italic;
+  }
+  .result-card img {
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+  }
+
+
+
+h2 {
+    font-size: calc(25px + (45 - 25) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+h5 {
+    font-size: calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.fa {
+    cursor: pointer;
+    font-size: 21px;
+    margin: 5px 10px 5px 10px !important
+}
+
+button {
+    font-size: calc(12px + (13 - 12) * ((100vw - 360px) / (1600 - 320))) !important;
+    padding-left: calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important;
+    padding-right: calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important;
+    padding-top: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important;
+    padding-bottom: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+li {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+
+.input-group-lg>.custom-select,
+.input-group-lg>.form-control:not(textarea) {
+    height: calc(40px + (48 - 40) * ((100vw - 360px) / (1600 - 360))) !important
+    border-radius: 10px !important
+}
+
+input::-webkit-input-placeholder {
+    padding-left: 5px !important;
+    transform: translate3d(0, -4px, 0)
+}
+
+input::placeholder {
+    vertical-align: middle !important;
+    font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+input:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+li:first-child {
+    font-size: 21px !important;
+    font-weight: bold;
+    margin-bottom: calc(40px + (48 - 40) * ((100vw - 360px) / (1600 - 360))) !important;
+    color: #757575 !important
+}
+
+footer {
+    color: #757575 !important
+}
+
+.social {
+    position: relative;
+    left: -10px
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+    color: green;
+    font-weight: bold
+}
