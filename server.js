@@ -4,7 +4,8 @@ const prompt = require('prompt-sync')({sigint: true}); //To pass input from the 
 var hits = 0;
 var songName = "";
 var songArtist = "";
-
+var  topThree;
+var pageViews = 0;
 
 //function search
 function search() {
@@ -34,20 +35,14 @@ function search() {
             songName = response.data.hits[i].result.full_title; //name of song
             songArtist = response.data.hits[i].result.artist_names; //name of artist
             pageViews = response.data.hits[i].result.stats.pageviews; //page views
-
-            var  topThree =  
-            console.log(hits);
-            console.log(songName);
-            console.log(songArtist);
-            console.log(pageViews);
-          }
-    }).catch(function (error) {
+            topThree = [hits, songName, songArtist, pageViews];
+            var sorted = topThree.sort((a, b) => b- a);
+            console.log(sorted)
+            //console.log(topThree);
+            //console.log(hits)
+    }}).catch(function (error) {
         console.error(error);
     })
-}
-
-// A function to sort the best three songs based on their pageviews
-function songRank(){
 
 }
 //Run the entry point of the application.

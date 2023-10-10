@@ -98,15 +98,17 @@ body {
   }
 
   .result-card {
-    width: 15rem;
-    height: 20rem;
+    width: 20rem;
+    height: 25rem;
     margin: 30px;
     padding-bottom:100px;
     background-color: #2cb433;
     border: none;
-    border-radius: 2  s0px 20px 30px 30px;
+    border-radius: 10px;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 12px;
+    display:flex;
     font-weight: 600;
     color: #ffffff ;
   }
@@ -115,6 +117,9 @@ body {
     height:100%;
   }
 
+  .result-section {
+    height: 60%;
+  }
 
 
 h2 {
