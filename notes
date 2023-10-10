@@ -1,0 +1,21 @@
+How the search bar is connected to the node js application
+=============================================================
+
+> The node js is made to be a socket and listen for any requests from the user. 
+> The front-end search engine is connected to a vanilla js function.
+> The function makes a POST request to the server securely and awaits a response.
+>  The node js server takes in the POST query and replies with an array of hits.
+>  The function takes in the array and expands it into objects that can be displayed on the front-end cards.
+
+
+How the node js server works
+============================
+> Uses express server as the core.
+> axios is imported to help with making a fetch request to our RapidAPI.
+> A function "search()" takes in the user query string.
+> Axios is called to make a request to the API. 
+> Axios gets an object as the answer and assigns selected values to pre-defined variables.
+> A function "songRank()" then takes in the results of the search as an array within an array.
+> A method is called to sort the array based on the pageview value.
+> The function returns a ranked list.
+> The entry point is then called to run the two functions - search() and songRank().

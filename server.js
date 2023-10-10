@@ -2,6 +2,9 @@ const express = require('express')
 const axios = require('axios')
 const prompt = require('prompt-sync')({sigint: true}); //To pass input from the user into our application.
 var hits = 0;
+var songName = "";
+var songArtist = "";
+
 
 //function search
 function search() {
@@ -26,16 +29,27 @@ function search() {
     
     //Pass the song title to a function that calls the Genius API.
     axios.request(options).then(function (response) {
-        //console.log(response.data);
-        for (let i = 0; i < 3; i++) {
-            hits =response.data.hits[i].result.release_date_for_display;
+        for (let i = 0; i < 6; i++) {
+            hits =response.data.hits[i].result.release_date_for_display; //release date
+            songName = response.data.hits[i].result.full_title; //name of song
+            songArtist = response.data.hits[i].result.artist_names; //name of artist
+            pageViews = response.data.hits[i].result.stats.pageviews; //page views
+
+            var  topThree =  
             console.log(hits);
+            console.log(songName);
+            console.log(songArtist);
+            console.log(pageViews);
           }
     }).catch(function (error) {
         console.error(error);
     })
 }
 
+// A function to sort the best three songs based on their pageviews
+function songRank(){
+
+}
 //Run the entry point of the application.
 const app = express(
     //run the search function when the server is started.
