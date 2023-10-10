@@ -1,7 +1,7 @@
 How the search bar is connected to the node js application
 =============================================================
 
-> The node js is made to be a socket and listen for any requests from the user. 
+> The node js is made to be a socket and listen for any requests from the user. -  DONE 
 > The front-end search engine is connected to a vanilla js function.
 > The function makes a POST request to the server securely and awaits a response.
 >  The node js server takes in the POST query and replies with an array of hits.
